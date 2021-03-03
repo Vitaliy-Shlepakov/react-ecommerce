@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './components/header/header';
+import Hero from './components/hero/hero';
+import MainSection from './components/main-section';
+import ProductsContextProvider from './context/products-context'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ProductsContextProvider>
+            <div className="App">
+                <Header/>
+                <Hero/>
+                <MainSection/>
+            </div>
+        </ProductsContextProvider>
+    );
 }
 
 export default App;
