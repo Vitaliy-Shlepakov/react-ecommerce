@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4327a3ef-e9d7-4678-8865-34a817cd4387" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/featured-collection/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/index.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/404/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/home/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/home/index.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/shop/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/shop/index.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/single-product/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/single-product/index.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/featured-product/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/featured-product/index.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/layout/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/cart-context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/cart-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-section/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-section/index.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/featured-product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/featured-product/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/cart-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/cart-context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/cart-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/cart-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +119,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -199,6 +190,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">

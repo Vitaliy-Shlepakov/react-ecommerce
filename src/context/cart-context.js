@@ -12,9 +12,22 @@ const initialState = {
 const CartContextProvider = ({children}) => {
     const [state, dispatch] = useReducer(cartReducer, initialState);
 
+    //actions creators
+    const addProduct = (product) => {
+        console.log(product, 'dispatch pproduct');
+        dispatch({type: 'ADD_ITEM', payload: product})
+    };
+
+    const contextValues = {
+        ...state,
+        addProduct,
+    };
+
     return (
-        <CartContext.Provider value={{...state}}>
+        <CartContext.Provider value={ contextValues }>
             { children }
         </CartContext.Provider>
     )
-}
+};
+
+export default CartContextProvider;
