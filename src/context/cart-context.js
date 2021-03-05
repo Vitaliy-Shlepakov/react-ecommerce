@@ -13,14 +13,14 @@ const CartContextProvider = ({children}) => {
     const [state, dispatch] = useReducer(cartReducer, initialState);
 
     //actions creators
-    const addProduct = (product) => {
-        console.log(product, 'dispatch pproduct');
-        dispatch({type: 'ADD_ITEM', payload: product})
-    };
+    const addProduct = (product) => dispatch({type: 'ADD_ITEM', payload: product});
+    const increase = product => dispatch({type: 'INCREASE', payload: product});
+
 
     const contextValues = {
         ...state,
         addProduct,
+        increase,
     };
 
     return (

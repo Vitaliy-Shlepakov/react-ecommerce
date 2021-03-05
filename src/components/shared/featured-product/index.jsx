@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import './index.sass';
 import {withRouter} from 'react-router-dom';
 import { isInCart } from "../../../helpers";
@@ -6,8 +6,8 @@ import { CartContext } from "../../../context/cart-context";
 
 const FeaturedProduct = ({product, history}) => {
 
-    const {cartItems, addProduct} = useContext(CartContext);
-
+    const {cartItems, addProduct, increase} = useContext(CartContext);
+    const itemInCart = isInCart(product, cartItems);
     return (
         <div className="featured-product">
             <div className="featured-image"
@@ -19,11 +19,14 @@ const FeaturedProduct = ({product, history}) => {
                 <h3>{product.title}</h3>
                 <p>{product.price}</p>
                 <button
-                    className="button is-black nomad-btn"
-                    onClick={() => !isInCart(product, cartItems) ? addProduct(product) : () => {}}
+                    className={`button nomad-btn ${!itemInCart && "is-black"}`}
+                    onClick={() => !itemInCart
+                        ? addProduct(product)
+                        : increase(product)
+                    }
                 >
                     {
-                        !isInCart(product, cartItems) ? 'Add to Cart' : 'Add more'
+                        !itemInCart ? 'Add to Cart' : 'Add more'
                     }
                 </button>
             </div>

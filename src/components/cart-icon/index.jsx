@@ -1,11 +1,10 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import shoppingBag from '../../assets/basket.png';
-import './cart-icon.scss';
+import './index.scss';
 import { CartContext } from '../../context/cart-context';
 
 const CartIcon = () => {
-    const {itemCount} = useContext(CartContext);
-
+    const {itemCount, cartItems} = useContext(CartContext);
     return (
         <div className="cart-container">
             <img src={shoppingBag} alt=""/>
