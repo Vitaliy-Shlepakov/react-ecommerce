@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4327a3ef-e9d7-4678-8865-34a817cd4387" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/cart-page/cart-items.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/cart-page/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/cart-page/index.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/cart-page/total.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-ecommerce.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/cart-page/icons/minus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/cart-page/icons/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/cart-page/icons/trash.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/single-product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/single-product/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/featured-product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/featured-product/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/cart-page/cart-items.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/cart-page/cart-items.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/cart-page/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/cart-page/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/cart-page/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/cart-page/index.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/cart-page/total.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/cart-page/total.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/cart-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/cart-context.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/cart-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/cart-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +116,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/pages/cart-page/icons" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -136,6 +133,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/pages/cart-page/icons" />
       <recent name="$PROJECT_DIR$/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -147,13 +145,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,7 +175,8 @@
       <workItem from="1614931645420" duration="867000" />
       <workItem from="1614932526927" duration="1384000" />
       <workItem from="1614933999645" duration="4049000" />
-      <workItem from="1614941596744" duration="5890000" />
+      <workItem from="1614941596744" duration="6033000" />
+      <workItem from="1615269614078" duration="5538000" />
     </task>
     <servers />
   </component>

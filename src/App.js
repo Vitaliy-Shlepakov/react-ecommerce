@@ -5,6 +5,7 @@ import {Switch, Route} from 'react-router-dom';
 import NotFound from "./components/pages/404";
 import Shop from "./components/pages/shop";
 import SingleProduct from "./components/pages/single-product";
+import CartPage from "./components/pages/cart-page";
 
 function App() {
     return (
@@ -24,6 +25,10 @@ function App() {
                     <Route
                         component={SingleProduct}
                         path="/product/:id"
+                    />
+                    <Route
+                        component={CartPage}
+                        path="/cart"
                     />
                     <Route
                         component={NotFound}

@@ -17,7 +17,11 @@
     font-size: 1rem
     font-weight: normal
     
-.btns-container 
+.btns-container
+
+  img
+    max-width: 20px
+
   button 
     border: none
     padding: 0.5rem 1rem
@@ -27,21 +31,37 @@
     
   .btn-increase 
     color: #fff
-    background-color: #1a1a1a
+    background-color: rgba(#1a1a1a, .3)
 
   .btn-decrease,
   .btn-trash
     color: #fff
     background-color: #d9534f
 
+h1,
+.empty-cart
+  text-align: center
+
+.total-container
+  margin: 2rem
+  text-align: center
+
 @media(min-width: 1024px)
   .cart-item
     display: flex
     justify-content: space-between
+
+    .total-container
+      text-align: center
+
     div
       margin: 1rem
     .name-price
       width: 200px
+
+  .cart-page
+    display: flex
+    justify-content: center
 
 
 

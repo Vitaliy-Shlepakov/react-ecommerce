@@ -1,41 +1,46 @@
 import React from 'react';
-import {
-    PlusCircleIcon,
-    MinusCircleIcon,
-    TrashIcon,
-} from '../../../icons';
+import PlusIcon from './icons/plus.svg';
+import MinusIcon from './icons/minus.svg';
+import TrashIcon from './icons/trash.svg';
 import './index.sass';
 
-const CartItems = (product) => {
-
-    const { title, imageUrl, price, quantity } = product;
+const CartItems = ({ product, increase, decrease, removeProduct }) => {
 
     return (
         <div className='cart-item'>
             <div className='item-image'>
-                <img src={imageUrl} alt="product"/>
+                <img src={product.imageUrl} alt="product"/>
             </div>
             <div className="name-price">
-                <h4>{title}</h4>
-                <p>${price}</p>
+                <h4>{product.title}</h4>
+                <p>${product.price}</p>
             </div>
             <div className="quantity">
-                <p>{`Quantity: ${quantity}`}</p>
+                <p>{`Quantity: ${product.quantity}`}</p>
             </div>
             <div className="btns-container">
-                <button className="btn-increase">
-                    <PlusCircleIcon/>
+                <button
+                    className="btn-increase"
+                    onClick={() => increase(product)}
+                >
+                    <img src={PlusIcon} alt=""/>
                 </button>
                 {
-                    quantity === 1 &&
-                        <button className="btn-trash">
-                            <TrashIcon/>
+                    product.quantity === 1 &&
+                        <button
+                            className="btn-trash"
+                            onClick={() => removeProduct(product)}
+                        >
+                            <img src={TrashIcon} alt=""/>
                         </button>
                 }
                 {
-                    quantity > 1 &&
-                        <button className="btn-increase">
-                            <MinusCircleIcon/>
+                    product.quantity > 1 &&
+                        <button
+                            className="btn-decrease"
+                            onClick={() => decrease(product)}
+                        >
+                            <img src={MinusIcon} alt=""/>
                         </button>
                 }
             </div>
